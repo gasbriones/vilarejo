@@ -1,0 +1,132 @@
+@import 'mixin';
+
+@media screen and (max-width: 35.5em) {
+  .social {
+    display: table;
+    margin: 30px auto 0;
+  }
+
+  .content {
+    margin: 0 3%;
+    .page-title {
+      font-size: (24em/16);
+      margin: (10em/24) 0 (30em/24);
+    }
+  }
+  .mobile-menu-wrapper {
+    width: 100% !important;
+    .logo {
+      margin-left: 0;
+    }
+  }
+
+  #menu-mobile-menu li a {
+    margin-left: 20%;
+  }
+
+  .icon-close {
+    margin-top: (15em/16) !important;
+    &:before {
+      top: (-5em/16) !important;;
+      left: 30% !important;;
+    }
+  }
+
+  .random-title {
+    font-size: (24em/16) !important;
+    line-height: (20em/16);
+    top: 47% !important;
+  }
+  .random-more {
+    font-size: (16em/16) !important;
+  }
+
+  .social{
+    float: none;
+  }
+  #tooltip-containter{
+    float: none;
+    line-height: (20em/16);
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .menu-wrapper {
+    background: none;
+    &:before {
+      background: none;
+    }
+  }
+  .page-tpl #header .menu-icon a {
+    background: url("../images/mobile-menu.png");
+  }
+  .page-tpl #header .logo a {
+    background: url("../images/logo.png");
+  }
+
+  .section-img {
+    width: 100%;
+    &:before {
+      display: none;
+    }
+  }
+
+  .wines-list {
+    margin-left: 0;
+    margin-right: 0;
+    .wines-details {
+      margin: 0 15%;
+    }
+  }
+
+  .mobile-menu-wrapper {
+    width: 65%;
+  }
+
+  .acf-map{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 64em) {
+  .logo {
+    float: right;
+  }
+  .menu-icon {
+    float: left;
+  }
+
+  .section-img.history-img-1::before {
+    width: 45%;
+  }
+  .section-img.history-img-2::before {
+    width: 45%;
+  }
+
+  .logo {
+    margin-left: 0 !important;
+  }
+
+  .random-title {
+    font-size: (38em/16);
+  }
+
+}
+
+/*
+*Fixme
+*/
+@media (min-width: 35.5em) and (max-width: 48em){
+  .random-title {
+    font-size: (40em/16) !important;
+    line-height: (20em/16) !important;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 64em){
+  .random-title {
+    font-size: (40em/16) !important;
+    line-height: (20em/16) !important;
+  }
+}
