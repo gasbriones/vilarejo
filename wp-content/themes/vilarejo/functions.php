@@ -4,7 +4,7 @@ function register_my_menus()
 {
     register_nav_menus(
         array(
-            'mobile-menu' => __('Mobile Menu')
+            'header-menu' => __('header menu')
         )
     );
 }
