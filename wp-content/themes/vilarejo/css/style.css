@@ -17,7 +17,8 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "HelveticaNeue"; }
 
 .wrapper {
   width: 100%;
@@ -33,6 +34,12 @@ figure {
   figure img {
     width: 100%; }
 
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
 #header {
   padding-top: 1.875em; }
   #header .logo-wrapper {
@@ -45,7 +52,6 @@ figure {
       font-size: 0.875em;
       margin-right: 1.78571em; }
       #header .menu li a {
-        font-family: "HelveticaNeue";
         color: #676159;
         text-decoration: none;
         padding: 0.71429em 1.07143em 1.07143em;
@@ -68,7 +74,6 @@ figure {
       text-decoration: none;
       color: #676159; }
     .main-menu .item .page-title {
-      font-family: "HelveticaNeue";
       font-size: 0.8125em;
       font-weight: 400;
       margin-top: 6.15385em;
@@ -112,7 +117,6 @@ figure {
     .extras .list p {
       font-size: 0.875em;
       margin: 0.35714em;
-      font-weight: 300;
       color: #676159; }
   .extras .more {
     color: #8CC76E;
@@ -128,7 +132,15 @@ figure {
   .extras .visite p {
     line-height: 1.6em; }
   .extras .facebook {
-    border-left: solid 1px #D7D7D7; }
+    border-left: solid 1px #D7D7D7;
+    padding: 0 1.25em; }
+    .extras .facebook .trip {
+      margin-top: 1.25em; }
+    .extras .facebook .fb-title {
+      color: #676159;
+      font-size: 0.75em;
+      text-align: center;
+      margin-bottom: 0.83333em; }
 
 #footer {
   background: #58595B;

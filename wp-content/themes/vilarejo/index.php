@@ -122,7 +122,14 @@ $chale = new WP_Query($args);
                         <?php endwhile; endif; ?>
                 </div>
             </div>
-            <div class="col-3 facebook" ></div>
+            <div class="col-3 facebook" >
+                <h2 class="fb-title">VILAREJO CHALÉ NO FACEBOOK</h2>
+                <div class="fb-page" data-href="https://www.facebook.com/Vilarejo-Maresias-294535930575850/" data-tabs="timeline"  data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+                <div class="trip">
+                    <img class="left" src="<?php echo get_template_directory_uri(); ?>/images/trip-icon.png">
+                    <img class="right"  src="<?php echo get_template_directory_uri(); ?>/images/trip-icon-2.png">
+                </div>
+            </div>
         </div>
     </div>
 </section>

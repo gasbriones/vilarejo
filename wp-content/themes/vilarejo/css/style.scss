@@ -38,6 +38,7 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+  font-family: "HelveticaNeue";
 }
 
 .wrapper {
@@ -57,6 +58,14 @@ figure {
   }
 }
 
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
 #header {
   padding-top: (30em/16);
 
@@ -72,7 +81,6 @@ figure {
       margin-right: (25em/14);
 
       a {
-        font-family: "HelveticaNeue";
         color: #676159;
         text-decoration: none;
         padding: (10em/14) (15em/14) (15em/14);
@@ -106,7 +114,6 @@ figure {
       color: #676159;
     }
     .page-title {
-      font-family: "HelveticaNeue";
       font-size: (13em/16);
       font-weight: 400;
       margin-top: (80em/13);
@@ -168,7 +175,6 @@ figure {
     p {
       font-size: (14em/16);
       margin: (5em/14);
-      font-weight: 300;
       color: #676159;
     }
   }
@@ -193,11 +199,22 @@ figure {
   }
 
   .facebook{
-    border-left:solid 1px #D7D7D7 ;
+    border-left:solid 1px #D7D7D7;
+    padding: 0 (20em/16);
+    .trip{
+      margin-top: (20em/16);
+    }
+    .fb-title{
+      color: #676159;
+      font-size: (12em/16);
+      text-align: center;
+      margin-bottom: (10em/12);
+    }
   }
 }
 
 #footer{
   background: #58595B;
   height: (250em/16);
+
 }
