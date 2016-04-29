@@ -53,8 +53,13 @@ figure {
   padding-bottom: 56.25%;
   position: relative;
   width: 100%;
+  position: relative;
   img{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -68,6 +73,7 @@ figure {
 
 #header {
   padding-top: (30em/16);
+  position: relative;
 
   .logo-wrapper {
     margin-bottom: (15em/16);
@@ -95,6 +101,28 @@ figure {
       }
     }
   }
+
+  .header-contact{
+    position: absolute;
+    top:(15em/16);
+    right: (40em/16);
+    z-index: 999;
+      li{
+        float: left;
+        width:(28em/16);
+        height: (27em/16);
+        background: url("../images/contact-icons.png") no-repeat;
+        margin-left: (15em/16);
+
+        &.whatsapp{
+          background-position:(-45em/16) 0;
+        }
+
+        &.telephone{
+          background-position:(-86em/16) 0;
+        }
+      }
+  }
 }
 
 .carousel {
@@ -108,6 +136,11 @@ figure {
   }
   .item {
     text-align: center;
+    margin-right: 5%;
+
+    &:last-child{
+      margin-right: 0;
+    }
 
     a {
       text-decoration: none;
@@ -147,6 +180,7 @@ figure {
       margin-top: (5em/21);
       font-weight: 400;
       position: relative;
+      font-weight: 500;
 
       &:before {
         content: "";
@@ -178,6 +212,11 @@ figure {
       color: #676159;
     }
   }
+
+  figure {
+    padding-bottom: 68.25%;
+  }
+
   .more {
     color: #8CC76E;
     font-size: (10em/16);
@@ -187,6 +226,11 @@ figure {
     margin-top: (20em/12);
     display: table;
     font-weight: bold;
+
+    &:hover{
+      color: #ffffff;
+      background: #8CC76E;
+    }
   }
   .block{
     margin-bottom: (65em/16);
@@ -215,6 +259,129 @@ figure {
 
 #footer{
   background: #58595B;
-  height: (250em/16);
+  box-sizing: border-box;
+  padding: (55em/16) 0;
 
+  form{
+    margin-top: (20em/16);
+    span{
+      color: #E6E7E8;
+      font-size: (12em/16);
+    }
+    input[type="text"],input[type="email"]{
+      width: (175em/16);
+      line-height: (30em/16);
+      border: none;
+      margin-bottom: (10em/16);
+    }
+    input[type="submit"]{
+      background: #8CC76E;
+      font-size: (12em/16);
+      color: #E6E7E8;
+      line-height: (40em/16);
+      border: none;
+      margin-left: (5em/12);
+    }
+  }
+  .title{
+    color: #E6E7E8;
+    font-size: (14em/16);
+    line-height: (33em/14);
+    text-decoration: none;
+    border: solid 1px #E6E7E8;
+    padding: 0 (10em/14);
+    display: table;
+    font-weight: bold;
+
+    &.contacto{
+      padding: 0 (25em/14);
+    }
+  }
+
+  .phones,.social{
+    float: left;
+    display: table;
+    li{
+      float: left;
+      font-size: (17em/16);
+      color: #E6E7E8;
+      font-weight: bold;
+      letter-spacing: 1px;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+
+      }
+    }
+  }
+
+  .phones{
+    margin-top: (30em/16);
+    li{
+      line-height:(39em/16);
+      margin-right: (30em/16);
+      padding-left: (35em/16);
+
+      &:before{
+        height: (38em/16);
+        width: (24em/16);
+        left: 0;
+        background: url("../images/phone-icon.png") no-repeat;
+      }
+
+      &.cel{
+        &:before{
+         background-position: (-50em/16) 0;
+        }
+      }
+    }
+  }
+
+  .social{
+    margin-top: (27em/16);
+    margin-left: (30em/16);
+    display: table;
+    li{
+      width: (39em/16);
+      height: (39em/16);
+      background: url("../images/social-icon-2.png") no-repeat;
+      margin-right: (10em/16);
+      &:last-child{
+        margin-right: 0;
+      }
+      &.fb{
+        background-position: 0 0;
+      }
+      &.inst{
+        background-position: (-47em/16) 0;
+      }
+      &.trip{
+        background-position: (-93em/16) 0;
+      }
+    }
+  }
+
+  .copy{
+    clear: both;
+    font-size: (13em/16);
+    color: #E6E7E8;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: (30em/14);
+    display: table;
+    line-height: (18em/13);
+    div{
+      position: relative;
+      padding-left: (44em/13);
+      &:before{
+        height: (33em/13);
+        width: (33em/13);
+        position: absolute;
+        left: 0;
+        content: "";
+        background: url("../images/gps.png") no-repeat;
+      }
+    }
+  }
 }

@@ -22,7 +22,7 @@ $chale = new WP_Query($args);
     </div>
     <div class="wrapper">
         <div class="grid-center main-menu">
-            <div class="col-12 grid-spaceAround">
+            <div class="col-12 grid-center">
                 <div class="col-3 item">
                     <?php if ($page_comfort->have_posts()):
                         while ($page_comfort->have_posts()):$page_comfort->the_post();?>
@@ -59,7 +59,7 @@ $chale = new WP_Query($args);
                             </a>
                         <?php endwhile; endif; ?>
                 </div>
-                <div class="col-3 item ">
+                <div class="col-3 item">
                     <?php if ($page_localization->have_posts()):
                         while ($page_localization->have_posts()):$page_localization->the_post();?>
                             <figure>
@@ -80,7 +80,7 @@ $chale = new WP_Query($args);
             </div>
         </div>
         <div class="grid-center extras">
-            <div class="col-9">
+            <div class="col-8">
                 <div class="grid-spaceAround block comodidades">
                     <?php if ($chale->have_posts()):
                         while ($chale->have_posts()):$chale->the_post();?>
@@ -122,7 +122,7 @@ $chale = new WP_Query($args);
                         <?php endwhile; endif; ?>
                 </div>
             </div>
-            <div class="col-3 facebook" >
+            <div class="col-3 facebook">
                 <h2 class="fb-title">VILAREJO CHALÉ NO FACEBOOK</h2>
                 <div class="fb-page" data-href="https://www.facebook.com/Vilarejo-Maresias-294535930575850/" data-tabs="timeline"  data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
                 <div class="trip">
