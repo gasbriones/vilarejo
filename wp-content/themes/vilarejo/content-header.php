@@ -6,7 +6,7 @@
             </a>
         </div>
         <div class="col-9 col-bottom menu-wrapper">
-            <ul class="contact">
+            <ul class="header-contact">
                 <li class="email"></li>
                 <li class="whatsapp"></li>
                 <li class="telephone"></li>
