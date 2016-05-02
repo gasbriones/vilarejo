@@ -4,6 +4,7 @@ get_header();
 $page_comfort =  new WP_Query('page_id=9');
 $page_visit = new WP_Query('page_id=27');
 $page_localization = new WP_Query('page_id=12');
+$page_contato = 14;
 
 $args = array(
     'cat' => 3,
@@ -17,8 +18,9 @@ $chale = new WP_Query($args);
 <body <?php body_class(); ?>>
 <?php get_template_part('content-header'); ?>
 <section id="main" class="clearfix">
-    <div class="carousel">
+    <div class="carousel home-slider">
         <?php if( function_exists('bxslider') ) bxslider('slider-home'); ?>
+        <div class="reserve"><a href="<?php echo get_permalink($page_contato); ?>">FAÇA SUA RESERVA</a></div>
     </div>
     <div class="wrapper">
         <div class="grid-center main-menu">
@@ -26,12 +28,10 @@ $chale = new WP_Query($args);
                 <div class="col-3 item">
                     <?php if ($page_comfort->have_posts()):
                         while ($page_comfort->have_posts()):$page_comfort->the_post();?>
-                            <figure>
-                                <a href="<?php the_permalink() ?>">
-                                    <img src="<?php echo the_field('page_image') ?>"/>
-                                </a>
-                            </figure>
                             <a href="<?php the_permalink() ?>">
+                                <figure>
+                                    <img src="<?php echo the_field('page_image') ?>"/>
+                                </figure>
                                 <h2 class="page-title acomodacoes">
                                     <?php the_title(); ?>
                                 </h2>
@@ -44,12 +44,10 @@ $chale = new WP_Query($args);
                 <div class="col-3 item">
                     <?php if ($page_visit->have_posts()):
                         while ($page_visit->have_posts()):$page_visit->the_post(); ?>
-                            <figure>
-                                <a href="<?php the_permalink() ?>">
-                                    <img src="<?php echo the_field('page_image') ?>"/>
-                                </a>
-                            </figure>
                             <a href="<?php the_permalink() ?>">
+                                <figure>
+                                    <img src="<?php echo the_field('page_image') ?>"/>
+                                </figure>
                                 <h2 class="page-title visite">
                                     <?php the_title(); ?>
                                 </h2>
@@ -62,12 +60,10 @@ $chale = new WP_Query($args);
                 <div class="col-3 item">
                     <?php if ($page_localization->have_posts()):
                         while ($page_localization->have_posts()):$page_localization->the_post();?>
-                            <figure>
-                                <a href="<?php the_permalink() ?>">
-                                    <img src="<?php echo the_field('page_image') ?>"/>
-                                </a>
-                            </figure>
                             <a href="<?php the_permalink() ?>">
+                                <figure>
+                                    <img src="<?php echo the_field('page_image') ?>"/>
+                                </figure>
                                 <h2 class="page-title localizacao">
                                     <?php the_title(); ?>
                                 </h2>
@@ -126,8 +122,8 @@ $chale = new WP_Query($args);
                 <h2 class="fb-title">VILAREJO CHALÉ NO FACEBOOK</h2>
                 <div class="fb-page" data-href="https://www.facebook.com/Vilarejo-Maresias-294535930575850/" data-tabs="timeline"  data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
                 <div class="trip">
-                    <img class="left" src="<?php echo get_template_directory_uri(); ?>/images/trip-icon.png">
-                    <img class="right"  src="<?php echo get_template_directory_uri(); ?>/images/trip-icon-2.png">
+                    <div id="TA_cdsratingsonlynarrow320" class="TA_cdsratingsonlynarrow left"><ul id="zg3UBLGft" class="TA_links Bul0fgk7N5md"><li id="s94BFhJ" class="9sISU3FT"><a target="_blank" href="https://www.tripadvisor.com.br/"><img src="https://www.tripadvisor.com.br/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor"/></a></li></ul></div><script src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=320&amp;locationId=2513445&amp;lang=pt&amp;border=true&amp;shadow=false&amp;display_version=2"></script>
+                    <div id="TA_excellent481" class="TA_excellent right"><ul id="FL7zgou" class="TA_links obUgwlFepkt"><li id="xgrV24LYJ" class="Onc5dC7AvY"><a target="_blank" href="https://www.tripadvisor.com.br/"><img src="https://static.tacdn.com/img2/widget/tripadvisor_logo_115x18.gif" alt="TripAdvisor" class="widEXCIMG" id="CDSWIDEXCLOGO"/></a></li></ul></div><script src="https://www.jscache.com/wejs?wtype=excellent&amp;uniq=481&amp;locationId=2513445&amp;lang=pt&amp;display_version=2"></script>
                 </div>
             </div>
         </div>

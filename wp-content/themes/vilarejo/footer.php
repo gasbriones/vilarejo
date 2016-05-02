@@ -18,7 +18,7 @@
                 <li class="cel">12 3865-6639</li>
             </ul>
             <ul class="social">
-                <li class="fb"></li>
+                <li class="fb"><a href="https://www.facebook.com/vilarejo.maresias" target="_blank"></a></li>
                 <li class="inst"></li>
                 <li class="trip"></li>
             </ul>

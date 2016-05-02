@@ -127,6 +127,23 @@ figure {
 
 .carousel {
   margin-bottom: (45em/16);
+  position: relative;
+  &.home-slider{
+    .reserve{
+      position: absolute;
+      bottom: (19em/16);
+      right: 13%;
+      a{
+        font-size: (17em/16);
+        color: #FFFFFF;
+        text-decoration: none;
+        background: #8CC76E;
+        padding: (20em/17) (30em/17);
+        box-sizing: border-box;
+        letter-spacing: (1em/17);
+      }
+    }
+  }
 }
 
 .main-menu {
@@ -134,67 +151,77 @@ figure {
   p {
     margin: 0;
   }
-  .item {
-    text-align: center;
-    margin-right: 5%;
 
-    &:last-child{
-      margin-right: 0;
+}
+
+
+
+.item {
+  text-align: center;
+  margin-right: 5%;
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #676159;
+    &:hover{
+      opacity: .70 !important;
+    }
+  }
+  .page-title {
+    font-size: (13em/16);
+    font-weight: 400;
+    margin-top: (80em/13);
+    position: relative;
+
+    &:before {
+      content: "";
+      height: (39em/13);
+      width: (32em/13);
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: (-50em/13);
+      position: absolute;
+      background: url("../images/main-menu-icons.png") no-repeat;
+      background-size: cover;
     }
 
-    a {
-      text-decoration: none;
-      color: #676159;
-    }
-    .page-title {
-      font-size: (13em/16);
-      font-weight: 400;
-      margin-top: (80em/13);
-      position: relative;
-
+    &.visite {
       &:before {
-        content: "";
-        height: (39em/13);
-        width: (32em/13);
-        left: 50%;
-        transform: translate(-50%, 0);
-        top: (-50em/13);
-        position: absolute;
-        background: url("../images/main-menu-icons.png") no-repeat;
-      }
-
-      &.visite {
-        &:before {
-          background-position: (-40em/13) 0;
-        }
-      }
-
-      &.localizacao {
-        &:before {
-          background-position: (-84em/13) 0;
-        }
+        background-position: (-40em/13) 0;
       }
     }
-    .entry {
-      font-size: (21em/16);
-      margin-top: (5em/21);
-      font-weight: 400;
-      position: relative;
-      font-weight: 500;
 
+    &.localizacao {
       &:before {
-        content: "";
-        height: (2em/13);
-        width: 15%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        bottom: (-10em/13);
-        position: absolute;
-        background: #8CC76E;
+        background-position: (-84em/13) 0;
       }
     }
   }
+  .entry {
+    font-size: (21em/16);
+    margin-top: (5em/21);
+    font-weight: 400;
+    position: relative;
+    font-weight: 500;
+
+    &:before {
+      content: "";
+      height: (2em/13);
+      width: 15%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      bottom: (-10em/13);
+      position: absolute;
+      background: #8CC76E;
+    }
+  }
 }
+
+
 
 .extras {
   margin-bottom: (100em/16);
@@ -347,6 +374,12 @@ figure {
       height: (39em/16);
       background: url("../images/social-icon-2.png") no-repeat;
       margin-right: (10em/16);
+
+      a{
+        display: table;
+        width: 100%;
+        height: 100%;
+      }
       &:last-child{
         margin-right: 0;
       }
@@ -382,6 +415,83 @@ figure {
         content: "";
         background: url("../images/gps.png") no-repeat;
       }
+    }
+  }
+}
+
+.trip{
+  #CDSWIDEXC{
+    margin: 0;
+    width: 120px;
+  }
+  .cdsROW.narrow{
+    width: 120px;
+  }
+}
+
+.page-wrapper{
+  .page-title {
+    font-size: (27em/16);
+    margin-top: (5em/27);
+    margin-bottom: (67em/27);
+    font-weight: 400;
+    position: relative;
+    font-weight: 400;
+    text-align: center;
+    font-family: Helvetica;
+    color: #676159;
+
+    &:before {
+      content: "";
+      height: (2em/13);
+      width: 7%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      bottom: (-10em/13);
+      position: absolute;
+      background: #8CC76E;
+    }
+  }
+
+  .page-text{
+    margin-bottom:(60em/16) ;
+  }
+
+  .page-extras{
+    color: #676159;
+    margin-bottom: (94em/16);
+    .extras-title{
+      font-weight: bold;
+      margin-bottom: (10em/16);
+    }
+
+    .extras-content{
+      ul{
+        list-style: disc;
+        margin: inherit;
+        padding: inherit;
+        margin-left: (15em/16);
+        li{
+          font-size: (15em/16);
+          line-height: (25em/15);
+        }
+      }
+    }
+
+  }
+}
+
+.links-footer{
+  background: #F1F2F2;
+  padding: 0 0 (40em/16);
+  font-size: (13em/16);
+  .item{
+    margin: 0;
+    .page-title{
+      margin-top: (80em/16);
+    }
+    .entry{
+      //font-weight: bold;
     }
   }
 }
