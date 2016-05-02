@@ -143,6 +143,9 @@ figure {
         letter-spacing: (1em/17);
       }
     }
+    img{
+      width: 100%;
+    }
   }
 }
 
@@ -492,6 +495,18 @@ figure {
     }
     .entry{
       //font-weight: bold;
+    }
+  }
+}
+
+.maresias{
+  .extras-content{
+
+    p{
+      font-size: (12em/16);
+    }
+    span{
+      font-size: (15em/12)  !important;
     }
   }
 }

@@ -97,6 +97,8 @@ figure {
       padding: 1.17647em 1.76471em;
       box-sizing: border-box;
       letter-spacing: 0.05882em; }
+  .carousel.home-slider img {
+    width: 100%; }
 
 .main-menu {
   margin-bottom: 6.25em; }
@@ -338,5 +340,10 @@ figure {
     margin: 0; }
     .links-footer .item .page-title {
       margin-top: 5em; }
+
+.maresias .extras-content p {
+  font-size: 0.75em; }
+.maresias .extras-content span {
+  font-size: 1.25em !important; }
 
 /*# sourceMappingURL=style.css.map */

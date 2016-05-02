@@ -1,13 +1,15 @@
 <?php
 /*
-Template Name: Pousada
+Template Name: Praia Maresias
 */
+
 get_header();
+
 
 ?>
 <body <?php body_class(); ?>>
 <?php get_template_part('content-header'); ?>
-<section id="main" class="clearfix">
+<section id="main" class="clearfix maresias">
     <div class="carousel home-slider">
         <?php if( function_exists('bxslider') ) bxslider('slider-home'); ?>
         <div class="reserve"><a href="<?php echo get_permalink($page_contato); ?>">FAÇA SUA RESERVA</a></div>
@@ -19,10 +21,22 @@ get_header();
                     <h1 class="page-title"><?php echo the_field('page_subtitle'); ?></h1>
                     <div class="page-text"><?php the_content(); ?></div>
                     <div class="page-extras">
-                        <h2 class="extras-title">Atividades Esportivas</h2>
-                        <div class="extras-content">
-                            <?php echo the_field('services_pousada') ?></div>
+                        <div class="grid">
+                            <div class="col">
+                                <h2 class="extras-title">Atividades Esportivas</h2>
+                                <div class="extras-content">
+                                    <?php echo the_field('sports_activity_maresias') ?>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h2 class="extras-title">Os melhores Restaurantes</h2>
+                                <div class="extras-content">
+                                    <?php echo the_field('best_restaurants_maresias') ?>
+                                </div>
+                            </div>
                         </div>
+
+                    </div>
                 <?php endwhile; endif; ?>
             </div>
         </div>
@@ -30,7 +44,7 @@ get_header();
     <div class="links-footer">
         <div class="grid-center">
             <div class="col-7 grid-spaceBetween">
-               <?php include 'links-footer.php'?>
+                <?php include 'links-footer.php'?>
             </div>
         </div>
     </div>
