@@ -103,15 +103,21 @@ $chale = new WP_Query($args);
                             <div class="col-5">
                                 <figure>
                                     <a href="<?php the_permalink() ?>">
-                                        <img src="<?php echo the_field('page_image') ?>"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/maresias-2.jpg"/>
                                     </a>
                                 </figure>
                             </div>
                             <div class="col-6">
                                 <h2 class="title">Fique no coração de Maresias</h2>
-
                                 <div class="list">
-                                    <?php echo the_content() ?>
+                                    <p>
+                                        Conhecida internacionalmente, a praia de Maresias fica
+                                        apenas 170km da cidade de São Paulo. E 25km do centro
+                                        histórico de São Sebastião.
+                                        Cidade natal do campeão mundial de surf, Gabriel Medina,
+                                        Maresias, possue uma linda praia para momentos agradáveis
+                                        em família, além de ser uma ótima opção para a prática do surf.
+                                    </p>
                                 </div>
                                 <a href="<?php the_permalink() ?>" class="more">MAIS INFORMAÇÃO</a>
                             </div>
