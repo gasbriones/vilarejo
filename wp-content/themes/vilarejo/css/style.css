@@ -296,25 +296,15 @@ figure {
 .trip .cdsROW.narrow {
   width: 120px; }
 
+.page-wrapper .item {
+  margin-bottom: 3.125em;
+  margin-right: 0; }
 .page-wrapper .page-title {
-  font-size: 1.6875em;
-  margin-top: 0.18519em;
-  margin-bottom: 2.48148em;
-  font-weight: 400;
-  position: relative;
-  font-weight: 400;
-  text-align: center;
-  font-family: Helvetica;
-  color: #676159; }
-  .page-wrapper .page-title:before {
-    content: "";
-    height: 0.15385em;
-    width: 7%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: -0.76923em;
-    position: absolute;
-    background: #8CC76E; }
+  font-size: 0.8125em !important; }
+.page-wrapper .entry {
+  font-size: 1.6875em !important; }
+  .page-wrapper .entry:before {
+    width: 7% !important; }
 .page-wrapper .page-text {
   margin-bottom: 3.75em; }
 .page-wrapper .page-extras {
@@ -345,5 +335,63 @@ figure {
   font-size: 0.75em; }
 .maresias .extras-content span {
   font-size: 1.25em !important; }
+.maresias .resto-list {
+  width: 100%; }
+  .maresias .resto-list tr {
+    border-bottom: solid 1px #B3B0AC; }
+    .maresias .resto-list tr:last-child {
+      border: none; }
+  .maresias .resto-list td:nth-child(odd) {
+    font-size: 0.9375em !important;
+    color: #8CC76E;
+    width: 50%;
+    padding: 0.66667em 0; }
+  .maresias .resto-list td:nth-child(even) {
+    font-size: 0.75em;
+    width: 50%;
+    text-align: right;
+    padding: 0.83333em 0; }
+
+.acf-map {
+  position: relative;
+  position: relative;
+  width: 100%;
+  z-index: 999; }
+  .acf-map:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%; }
+  .acf-map > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.map-wrapper {
+  margin-top: 1.25em;
+  margin-bottom: 3.4375em; }
+
+.location .address {
+  color: #676159;
+  font-size: 0.875em;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.78571em;
+  padding-bottom: 2.85714em;
+  border-bottom: solid 1px #C9C8C8;
+  margin-bottom: 2.85714em; }
+.location .distances {
+  color: #8CC76E; }
+  .location .distances h2 {
+    margin-bottom: 1.875em;
+    text-align: center; }
+  .location .distances ul {
+    list-style: disc;
+    display: table;
+    margin: 0 auto; }
+    .location .distances ul li {
+      line-height: 1.875em; }
 
 /*# sourceMappingURL=style.css.map */

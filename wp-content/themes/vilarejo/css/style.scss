@@ -433,28 +433,22 @@ figure {
 }
 
 .page-wrapper{
-  .page-title {
-    font-size: (27em/16);
-    margin-top: (5em/27);
-    margin-bottom: (67em/27);
-    font-weight: 400;
-    position: relative;
-    font-weight: 400;
-    text-align: center;
-    font-family: Helvetica;
-    color: #676159;
 
-    &:before {
-      content: "";
-      height: (2em/13);
-      width: 7%;
-      left: 50%;
-      transform: translate(-50%, 0);
-      bottom: (-10em/13);
-      position: absolute;
-      background: #8CC76E;
+  .item{
+    margin-bottom: (50em/16);
+    margin-right: 0;
+  }
+
+  .page-title {
+    font-size: (13em/16) !important;
+  }
+  .entry{
+    font-size: (27em/16) !important;
+    &:before{
+      width: 7% !important;
     }
   }
+
 
   .page-text{
     margin-bottom:(60em/16) ;
@@ -501,12 +495,77 @@ figure {
 
 .maresias{
   .extras-content{
-
     p{
       font-size: (12em/16);
     }
     span{
       font-size: (15em/12)  !important;
+    }
+  }
+
+  .resto-list{
+    width: 100%;
+
+    tr{
+      border-bottom:solid 1px #B3B0AC;
+      &:last-child{
+        border: none;
+      }
+    }
+
+    td:nth-child(odd) {
+      font-size: (15em/16)  !important;
+      color:  #8CC76E;
+      width: 50%;
+      padding: (10em/15) 0;
+    }
+
+    td:nth-child(even) {
+      font-size: (12em/16);
+      width: 50%;
+      text-align: right;
+      padding: (10em/12) 0;
+    }
+
+  }
+}
+
+.acf-map {
+  @include aspect-ratio(16, 9);
+  position: relative;
+  width: 100%;
+  z-index: 999;
+}
+
+.map-wrapper{
+  margin-top: (20em/16);
+  margin-bottom: (55em/16);
+}
+
+.location{
+  .address{
+    color: #676159;
+    font-size: (14em/16);
+    text-align: center;
+    font-weight: bold;
+    line-height: (25em/14);
+    padding-bottom: (40em/14);
+    border-bottom: solid 1px #C9C8C8 ;
+    margin-bottom: (40em/14);
+  }
+  .distances{
+    color: #8CC76E;
+    h2{
+      margin-bottom: (30em/16);
+      text-align: center;
+    }
+    ul{
+      list-style: disc;
+      display: table;
+      margin: 0 auto;
+      li{
+        line-height: (30em/16);
+      }
     }
   }
 }

@@ -4,6 +4,8 @@ Template Name: Pousada
 */
 get_header();
 
+$page_contato = 14;
+
 ?>
 <body <?php body_class(); ?>>
 <?php get_template_part('content-header'); ?>
