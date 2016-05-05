@@ -18,10 +18,14 @@ $page_contato = 14;
         <div class="grid-center">
             <div class="col-10 page-wrapper">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <h1 class="page-title"><?php echo the_field('page_subtitle'); ?></h1>
+                    <div class="item">
+                        <div class="entry">
+                            <?php echo the_field('page_subtitle'); ?>
+                        </div>
+                    </div>
                     <div class="page-text"><?php the_content(); ?></div>
                     <div class="page-extras">
-                        <h2 class="extras-title">Atividades Esportivas</h2>
+                        <h2 class="extras-title">Serviços</h2>
                         <div class="extras-content">
                             <?php echo the_field('services_pousada') ?></div>
                         </div>

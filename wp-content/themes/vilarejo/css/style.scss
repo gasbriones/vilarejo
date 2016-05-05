@@ -7,9 +7,21 @@
   url('../fonts/HelveticaNeueLTStd-Bd.woff') format('woff'),
   url('../fonts/HelveticaNeueLTStd-Bd.ttf') format('truetype'),
   url('../fonts/HelveticaNeueLTStd-Bd.svg#HelveticaNeueLTStd-Bd') format('svg');
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeueLTStd-Md.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeueLTStd-Md.otf')  format('opentype'),
+  url('../fonts/HelveticaNeueLTStd-Md.woff') format('woff'),
+  url('../fonts/HelveticaNeueLTStd-Md.ttf')  format('truetype'),
+  url('../fonts/HelveticaNeueLTStd-Md.svg#HelveticaNeueLTStd-Md') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
 
 @font-face {
   font-family: 'HelveticaNeue';
@@ -32,6 +44,8 @@
   font-weight: 300;
   font-style: normal;
 }
+
+
 
 html, body {
   margin: 0;
@@ -207,9 +221,8 @@ figure {
   .entry {
     font-size: (21em/16);
     margin-top: (5em/21);
-    font-weight: 400;
     position: relative;
-    font-weight: 500;
+    color:#676159;
 
     &:before {
       content: "";
@@ -451,7 +464,8 @@ figure {
 
 
   .page-text{
-    margin-bottom:(60em/16) ;
+    margin-bottom:(60em/16);
+    color: #676159;
   }
 
   .page-extras{
@@ -567,5 +581,117 @@ figure {
         line-height: (30em/16);
       }
     }
+  }
+}
+
+.contato{
+  .home-img{
+    margin-top:(25em/16);
+    margin-bottom: (50em/16);
+    img{
+      width: 100%;
+    }
+  }
+  .title{
+    color: #231F20;
+    font-size: (20em/16);
+    font-weight: 500;
+  }
+  .subtitle{
+    color: #808285;
+    font-size: (11em/16);
+  }
+
+  .contact-data{
+    margin-top: (25em/16);
+    display: table;
+    li{
+      font-size: (14em/16);
+      color:#676159;
+      font-weight: 500;
+      border-bottom: solid 1px #B3B0AC;
+      padding:(18em/14) 0;
+      padding-right:(10em/14);
+      position: relative;
+
+      &:last-child{
+        border: none;
+      }
+
+      &:before{
+        content: "";
+        height: (35em/14);
+        width: (30em/14);
+        left: -(55em/14);
+        top: (5em/14);
+        position: absolute;
+        background: url("../images/iconos-contacto.png") no-repeat;
+        background-size: cover;
+      }
+
+      &.gps{
+        &:before{
+          background-position: 0 -30px;
+          top: (23em/14);
+        }
+      }
+      &.mobile{
+        &:before{
+          background-position: 0 -70px;
+        }
+      }
+
+      &.phone{
+        &:before{
+          background-position: 0 -112px;
+        }
+      }
+
+      &.mail{
+        &:before{
+          background-position: 0 -160px;
+        }
+      }
+    }
+  }
+  .page-wrapper{
+    margin-bottom: (280em/16);
+  }
+
+  form{
+    margin-top: (30em/16);
+    color: #58595B;
+    font-size: (12em/16);
+    label,input{
+      display: block;
+    }
+    label{
+      font-weight: 500;
+    }
+
+    input[type="text"]{
+      margin-bottom:(20em/16);
+      height: (23em/16);
+      line-height: (23em/16);
+      border: solid thin #D3D4D5;
+      width: 100%;
+    }
+    textarea{
+      border: solid thin #D3D4D5;
+      width: 100%;
+      height: (93em/16);
+    }
+
+    input[type="submit"]{
+      background: #8CC76E;
+      color: #FFFFFF;
+      font-size: (15em/12);
+      padding: (5em/15) (10em/15);
+      border: none;
+      font-weight: 500;
+      margin-top:(20em/15);
+      margin-right: (-3em/15);
+    }
+
   }
 }
