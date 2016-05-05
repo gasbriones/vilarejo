@@ -223,6 +223,7 @@ figure {
     margin-top: (5em/21);
     position: relative;
     color:#676159;
+    font-weight: 500;
 
     &:before {
       content: "";
@@ -495,7 +496,7 @@ figure {
 .links-footer{
   background: #F1F2F2;
   padding: 0 0 (40em/16);
-  font-size: (13em/16);
+  font-size: (16em/16);
   .item{
     margin: 0;
     .page-title{

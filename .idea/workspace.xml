@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245ce742-dce9-4a36-a2c0-270800f2c698" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/vilarejo/contato-tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vilarejo/css/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/vilarejo/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vilarejo/css/style.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/vilarejo/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vilarejo/css/style.scss" afterPath="$PROJECT_DIR$/wp-content/themes/vilarejo/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vilarejo/pousada-tpl.php" afterPath="$PROJECT_DIR$/wp-content/themes/vilarejo/pousada-tpl.php" />
     </list>
     <ignored path="vilarejo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +29,8 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/vilarejo/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65844405">
-              <caret line="692" column="28" selection-start-line="692" selection-start-column="28" selection-end-line="692" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.43453512">
+              <caret line="498" column="16" selection-start-line="498" selection-start-column="16" selection-end-line="498" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -887,8 +884,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/vilarejo/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65844405">
-          <caret line="692" column="28" selection-start-line="692" selection-start-column="28" selection-end-line="692" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.43453512">
+          <caret line="498" column="16" selection-start-line="498" selection-start-column="16" selection-end-line="498" selection-end-column="16" />
           <folding />
         </state>
       </provider>

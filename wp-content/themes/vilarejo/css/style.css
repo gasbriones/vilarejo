@@ -143,7 +143,8 @@ figure {
     font-size: 1.3125em;
     margin-top: 0.2381em;
     position: relative;
-    color: #676159; }
+    color: #676159;
+    font-weight: 500; }
     .item .entry:before {
       content: "";
       height: 0.15385em;
@@ -330,7 +331,7 @@ figure {
 .links-footer {
   background: #F1F2F2;
   padding: 0 0 2.5em;
-  font-size: 0.8125em; }
+  font-size: 1em; }
   .links-footer .item {
     margin: 0; }
     .links-footer .item .page-title {
