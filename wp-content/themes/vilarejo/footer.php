@@ -14,8 +14,8 @@
         <div class="col-7" push-left="off-1">
             <h2 class="title contacto">CONTATO</h2>
             <ul class="phones">
-                <li>+55 12 99653-6063</li>
-                <li class="cel">12 3865-6639</li>
+                <li class="wtsp"><img src="<?php echo get_template_directory_uri(); ?>/images/wtsp-icon.png">+55 12 99653-6063</li>
+                <li class="cel">+55 12 3865-6639</li>
             </ul>
             <ul class="social">
                 <li class="fb"><a href="https://www.facebook.com/vilarejo.maresias" target="_blank"></a></li>

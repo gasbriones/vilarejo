@@ -5,6 +5,7 @@ $page_comfort =  new WP_Query('page_id=9');
 $page_visit = new WP_Query('page_id=27');
 $page_localization = new WP_Query('page_id=12');
 $page_contato = 14;
+$page_acomodacoes = 9;
 
 $args = array(
     'cat' => 3,
@@ -82,7 +83,7 @@ $chale = new WP_Query($args);
                         while ($chale->have_posts()):$chale->the_post();?>
                             <div class="col-5">
                                 <figure>
-                                    <a href="<?php the_permalink() ?>">
+                                    <a href="<?php echo get_permalink($page_acomodacoes); ?>">
                                         <img src="<?php echo the_field('chale_image_1') ?>"/>
                                     </a>
                                 </figure>
@@ -93,7 +94,7 @@ $chale = new WP_Query($args);
                                 <div class="list">
                                     <?php echo the_field('comodidades') ?>
                                 </div>
-                                <a href="<?php the_permalink() ?>" class="more">MAIS INFORMAÇÃO</a>
+                                <a href="<?php echo get_permalink($page_acomodacoes); ?>" class="more">MAIS INFORMAÇÃO</a>
                             </div>
                         <?php endwhile; endif; ?>
                 </div>

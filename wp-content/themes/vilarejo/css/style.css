@@ -92,7 +92,7 @@ figure {
   position: relative; }
   .carousel.home-slider .reserve {
     position: absolute;
-    bottom: 1.1875em;
+    bottom: 1.125em;
     right: 13%; }
     .carousel.home-slider .reserve a {
       font-size: 1.0625em;
@@ -102,6 +102,8 @@ figure {
       padding: 1.17647em 1.76471em;
       box-sizing: border-box;
       letter-spacing: 0.05882em; }
+      .carousel.home-slider .reserve a:hover {
+        background: #71BA4E; }
   .carousel.home-slider img {
     width: 100%; }
 
@@ -158,7 +160,7 @@ figure {
 .extras {
   margin-bottom: 6.25em; }
   .extras .title {
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 1.25em;
     color: #676159; }
   .extras .list {
@@ -177,14 +179,15 @@ figure {
     padding: 0.41667em 0.83333em;
     margin-top: 1.66667em;
     display: table;
-    font-weight: bold; }
+    font-weight: 500; }
     .extras .more:hover {
       color: #ffffff;
       background: #8CC76E; }
   .extras .block {
     margin-bottom: 4.0625em; }
   .extras .visite p {
-    line-height: 1.6em; }
+    line-height: 1.6em;
+    margin: 0; }
   .extras .facebook {
     border-left: solid 1px #D7D7D7;
     padding: 0 1.25em; }
@@ -195,6 +198,22 @@ figure {
       font-size: 0.75em;
       text-align: center;
       margin-bottom: 0.83333em; }
+  .extras .horarios {
+    font-size: 0.9375em;
+    color: #8CC76E;
+    font-weight: 500;
+    margin-top: 2.66667em;
+    display: block; }
+  .extras .reserve a {
+    display: table;
+    font-size: 1.0625em;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #8CC76E;
+    padding: 0.70588em 1.05882em;
+    box-sizing: border-box;
+    letter-spacing: 0.05882em;
+    margin-top: 2.35294em; }
 
 #footer {
   background: #58595B;
@@ -225,7 +244,7 @@ figure {
     border: solid 1px #E6E7E8;
     padding: 0 0.71429em;
     display: table;
-    font-weight: bold; }
+    font-weight: 500; }
     #footer .title.contacto {
       padding: 0 1.78571em; }
   #footer .phones, #footer .social {
@@ -235,7 +254,7 @@ figure {
       float: left;
       font-size: 1.0625em;
       color: #E6E7E8;
-      font-weight: bold;
+      font-weight: 500;
       letter-spacing: 1px;
       position: relative; }
       #footer .phones li:before, #footer .social li:before {
@@ -254,6 +273,13 @@ figure {
         background: url("../images/phone-icon.png") no-repeat; }
       #footer .phones li.cel:before {
         background-position: -3.125em 0; }
+      #footer .phones li.wtsp {
+        padding-left: 0; }
+        #footer .phones li.wtsp:before {
+          width: 3.125em;
+          left: 40px; }
+        #footer .phones li.wtsp img {
+          margin-right: 2.5em; }
   #footer .social {
     margin-top: 1.6875em;
     margin-left: 1.875em;
@@ -279,7 +305,7 @@ figure {
     clear: both;
     font-size: 0.8125em;
     color: #E6E7E8;
-    font-weight: bold;
+    font-weight: 500;
     letter-spacing: 1px;
     padding-top: 2.14286em;
     display: table;
@@ -291,7 +317,7 @@ figure {
         height: 2.53846em;
         width: 2.53846em;
         position: absolute;
-        left: 0;
+        left: -0.38462em;
         content: "";
         background: url("../images/gps.png") no-repeat; }
 
@@ -317,7 +343,7 @@ figure {
   color: #676159;
   margin-bottom: 5.875em; }
   .page-wrapper .page-extras .extras-title {
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 0.625em; }
   .page-wrapper .page-extras .extras-content ul {
     list-style: disc;
@@ -376,14 +402,13 @@ figure {
     bottom: 0; }
 
 .map-wrapper {
-  margin-top: 1.25em;
   margin-bottom: 3.4375em; }
 
 .location .address {
   color: #676159;
   font-size: 0.875em;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.78571em;
   padding-bottom: 2.85714em;
   border-bottom: solid 1px #C9C8C8;
@@ -392,7 +417,7 @@ figure {
   color: #8CC76E; }
   .location .distances h2 {
     margin-bottom: 1.875em;
-    text-align: center; }
+    padding-left: 20%; }
   .location .distances ul {
     list-style: disc;
     display: table;
@@ -441,6 +466,9 @@ figure {
       background-position: 0 -70px; }
     .contato .contact-data li.phone:before {
       background-position: 0 -112px; }
+    .contato .contact-data li.mail a {
+      text-decoration: none;
+      color: #676159; }
     .contato .contact-data li.mail:before {
       background-position: 0 -160px; }
 .contato .page-wrapper {
@@ -472,5 +500,30 @@ figure {
     font-weight: 500;
     margin-top: 1.33333em;
     margin-right: -0.2em; }
+
+.gallery {
+  margin-bottom: 3.125em; }
+  .gallery:nth-child(n+1) {
+    margin-right: 5%; }
+  .gallery .title-unit {
+    color: #676159;
+    font-size: 0.9375em;
+    margin-bottom: 2.33333em; }
+    .gallery .title-unit span {
+      float: left; }
+      .gallery .title-unit span p {
+        margin: 0; }
+    .gallery .title-unit .units {
+      color: #908B86;
+      font-size: 0.86667em;
+      margin-left: 5%; }
+  .gallery .thumbnail {
+    margin-top: 1.25em;
+    padding: 0 5%;
+    box-sizing: border-box;
+    cursor: pointer; }
+
+.tooltip {
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

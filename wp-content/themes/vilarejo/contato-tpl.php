@@ -26,9 +26,9 @@ $page_contato = 14;
                             <li class="gps">Rua Olimpio Romão César, 189<br>
                                 Maresias, CEP 11600-000<br>
                                 São Paulo - Brasil.</li>
-                            <li class="mobile">2 99653-6063</li>
-                            <li class="phone">12 3865-6639</li>
-                            <li class="mail">contato@vilarejomaresias.com.br</li>
+                            <li class="mobile"> +55 12 99653-6063</li>
+                            <li class="phone">+55 12 3865-6639</li>
+                            <li class="mail"><a href="mailto:contato@vilarejomaresias.com.br">contato@vilarejomaresias.com.br</a></li>
                         </ul>
                     </div>
                     <div class="col">
@@ -49,7 +49,7 @@ $page_contato = 14;
                                     <input type="text" />
                                     <label>*E-mail</label>
                                     <input type="text" />
-                                    <label>Check-In</label>
+                                    <label>Check-Out</label>
                                     <input type="text" />
                                 </div>
                             </div>

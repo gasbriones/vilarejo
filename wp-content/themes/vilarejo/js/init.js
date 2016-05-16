@@ -151,9 +151,6 @@
      */
 // global var
     var map = null;
-
-
-
     $(document).ready(function(){
 
         $('.bxslider').each(function(){
@@ -168,5 +165,18 @@
         $('.acf-map').each(function () {
             map = new_map($(this));
         });
+    });
+
+    //tooltip init
+    $('.tooltip').hover(function () {
+        $('#tooltip-containter').html($(this).data('text')).stop().animate({
+            marginLeft: '10px',
+            opacity: 1
+        }, 250);
+    }, function () {
+        $('#tooltip-containter').stop().animate({
+            marginLeft: '0',
+            opacity: 0
+        }, 250);
     });
 })(jQuery);
