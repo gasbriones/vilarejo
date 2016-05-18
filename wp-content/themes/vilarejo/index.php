@@ -26,7 +26,7 @@ $chale = new WP_Query($args);
     <div class="wrapper">
         <div class="grid-center main-menu">
             <div class="col-12 grid-center">
-                <div class="col-3 item">
+                <div class="col-3_xs-9  item">
                     <?php if ($page_comfort->have_posts()):
                         while ($page_comfort->have_posts()):$page_comfort->the_post();?>
                             <a href="<?php the_permalink() ?>">
@@ -42,7 +42,7 @@ $chale = new WP_Query($args);
                             </a>
                         <?php endwhile; endif; ?>
                 </div>
-                <div class="col-3 item">
+                <div class="col-3_xs-9  item">
                     <?php if ($page_visit->have_posts()):
                         while ($page_visit->have_posts()):$page_visit->the_post(); ?>
                             <a href="<?php the_permalink() ?>">
@@ -58,7 +58,7 @@ $chale = new WP_Query($args);
                             </a>
                         <?php endwhile; endif; ?>
                 </div>
-                <div class="col-3 item">
+                <div class="col-3_xs-9  item">
                     <?php if ($page_localization->have_posts()):
                         while ($page_localization->have_posts()):$page_localization->the_post();?>
                             <a href="<?php the_permalink() ?>">
@@ -77,18 +77,18 @@ $chale = new WP_Query($args);
             </div>
         </div>
         <div class="grid-center extras">
-            <div class="col-8">
+            <div class="col-8_sm-12">
                 <div class="grid-spaceAround block comodidades">
                     <?php if ($chale->have_posts()):
                         while ($chale->have_posts()):$chale->the_post();?>
-                            <div class="col-5">
+                            <div class="col-5_xs-9">
                                 <figure>
                                     <a href="<?php echo get_permalink($page_acomodacoes); ?>">
                                         <img src="<?php echo the_field('chale_image_1') ?>"/>
                                     </a>
                                 </figure>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6_xs-9">
                                 <h2 class="title">Comodidades do Chalés</h2>
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/comodidades-chale.png">
                                 <div class="list">
@@ -101,14 +101,14 @@ $chale = new WP_Query($args);
                 <div class="grid-spaceAround block visite">
                     <?php if ($page_visit->have_posts()):
                         while ($page_visit->have_posts()):$page_visit->the_post();?>
-                            <div class="col-5">
+                            <div class="col-5_xs-9">
                                 <figure>
                                     <a href="<?php the_permalink() ?>">
                                         <img src="<?php echo get_template_directory_uri(); ?>/images/maresias-2.jpg"/>
                                     </a>
                                 </figure>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6_xs-9">
                                 <h2 class="title">Fique no coração de Maresias</h2>
                                 <div class="list">
                                     <p>
@@ -125,7 +125,7 @@ $chale = new WP_Query($args);
                         <?php endwhile; endif; ?>
                 </div>
             </div>
-            <div class="col-3 facebook">
+            <div class="col-3_sm-12 facebook">
                 <h2 class="fb-title">VILAREJO CHALÉ NO FACEBOOK</h2>
                 <div class="fb-page" data-href="https://www.facebook.com/Vilarejo-Maresias-294535930575850/" data-tabs="timeline"  data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
                 <div class="trip">

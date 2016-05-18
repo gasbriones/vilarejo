@@ -11,7 +11,7 @@ $page_contato = 14;
 <?php get_template_part('content-header'); ?>
 <section id="main" class="clearfix">
     <div class="carousel home-slider">
-        <?php if( function_exists('bxslider') ) bxslider('slider-home'); ?>
+        <?php if( function_exists('bxslider') ) bxslider('slider-a-pousada'); ?>
         <div class="reserve"><a href="<?php echo get_permalink($page_contato); ?>">FAÇA SUA RESERVA</a></div>
     </div>
     <div class="wrapper">
@@ -34,11 +34,7 @@ $page_contato = 14;
         </div>
     </div>
     <div class="links-footer">
-        <div class="grid-center">
-            <div class="col-7 grid-spaceBetween">
-               <?php include 'links-footer.php'?>
-            </div>
-        </div>
+        <?php include 'links-footer.php'?>
     </div>
 </section>
 <?php get_footer(); ?>
