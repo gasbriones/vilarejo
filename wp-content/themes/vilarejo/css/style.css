@@ -88,6 +88,8 @@ figure {
         background-position: -5.375em 0; }
 
 .carousel {
+  margin: 0 auto;
+  max-width: 80em;
   margin-bottom: 2.8125em;
   position: relative; }
   .carousel.home-slider .reserve {
@@ -426,7 +428,6 @@ figure {
       line-height: 1.875em; }
 
 .contato .home-img {
-  margin-top: 1.5625em;
   margin-bottom: 3.125em; }
   .contato .home-img img {
     width: 100%; }

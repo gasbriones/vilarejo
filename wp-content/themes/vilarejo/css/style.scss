@@ -140,6 +140,8 @@ figure {
 }
 
 .carousel {
+  margin: 0 auto;
+  max-width: 80em;
   margin-bottom: (45em/16);
   position: relative;
   &.home-slider{
@@ -624,7 +626,6 @@ figure {
 
 .contato{
   .home-img{
-    margin-top:(25em/16);
     margin-bottom: (50em/16);
     img{
       width: 100%;

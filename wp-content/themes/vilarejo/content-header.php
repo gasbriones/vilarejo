@@ -7,9 +7,9 @@
         </div>
         <div class="col-9_xs-12 col-bottom menu-wrapper">
             <ul class="header-contact">
-                <li class="email tooltip hvr-float" title="contato@vilarejomaresias.com.br"></li>
-                <li class="whatsapp tooltip hvr-float" title="+55 12 99653-6063"></li>
-                <li class="telephone tooltip hvr-float" title="12 3865-6639"></li>
+                <li class="email tooltip" title="contato@vilarejomaresias.com.br"></li>
+                <li class="whatsapp tooltip" title="+55 12 99653-6063"></li>
+                <li class="telephone tooltip" title="+55 12 3865-6639"></li>
             </ul>
             <?php wp_nav_menu(array('theme_location' => 'header-menu','container' => 'none')); ?>
         </div>

@@ -49,11 +49,7 @@ $page_contato = 14;
         </div>
     </div>
     <div class="links-footer">
-        <div class="grid-center">
-            <div class="col-7 grid-spaceBetween">
-                <?php include 'links-footer.php'?>
-            </div>
-        </div>
+        <?php include 'links-footer.php'?>
     </div>
 </section>
 <?php get_footer(); ?>

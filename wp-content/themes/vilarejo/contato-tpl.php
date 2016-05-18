@@ -70,7 +70,6 @@ $page_contato = 14;
         <?php include 'links-footer.php'?>
     </div>
 </section>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <?php get_footer(); ?>
 </body>
 </html>

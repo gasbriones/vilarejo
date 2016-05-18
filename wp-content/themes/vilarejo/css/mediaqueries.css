@@ -39,7 +39,10 @@
     margin-bottom: 2.5em; }
 
   .contato .form-wrapper {
-    margin-top: 1.875em; } }
+    margin-top: 1.875em; }
+
+  #footer .phones li {
+    margin-right: 0; } }
 @media screen and (max-width: 48em) {
   .facebook {
     display: none; }

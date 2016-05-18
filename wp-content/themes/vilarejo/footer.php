@@ -18,9 +18,9 @@
                 <li class="cel">+55 12 3865-6639</li>
             </ul>
             <ul class="social">
-                <li class="fb"><a href="https://www.facebook.com/vilarejo.maresias" target="_blank"></a></li>
+                <li class="fb"><a href="https://www.facebook.com/Vilarejo-Maresias-294535930575850/" target="_blank"></a></li>
                 <li class="inst"></li>
-                <li class="trip"></li>
+                <li class="trip"><a href="https://www.tripadvisor.com.br/Hotel_Review-g1219730-d2513445-Reviews-Vilarejo_Chale-Maresias_Sao_Sebastiao_State_of_Sao_Paulo.html" target="_blank"></a></li>
             </ul>
             <div class="copy">
                 <div>Rua Olimpio Romão Cesar, 189, Maresias, CEP 11600-000, São Paulo - Brasil.<br>Todos os dereitos reservados ®</div>
@@ -28,5 +28,6 @@
         </div>
     </div>
     <?php wp_footer(); ?>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/init.js"></script>
 </footer>
