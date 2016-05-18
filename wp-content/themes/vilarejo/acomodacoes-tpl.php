@@ -41,7 +41,7 @@ $chale = new WP_Query($args);
             <div class="col-10">
                 <div class="grid-spaceAround block comodidades">
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                        <div class="col-4">
+                        <div class="col-4_sm-12">
                             <h2 class="title">Comodidades do Chalés</h2>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/comodidades-chale.png">
                             <div class="list">
@@ -54,10 +54,10 @@ $chale = new WP_Query($args);
                             <div class="reserve"><a href="<?php echo get_permalink($page_contato); ?>">RESERVAR</a></div>
                         </div>
                     <?php endwhile; endif; ?>
-                        <div class="col-8 grid">
+                        <div class="col-8_sm-12 grid">
                             <?php if ($chale->have_posts()):
                                 while ($chale->have_posts()):$chale->the_post(); $i++;?>
-                                    <div class="col-5 gallery">
+                                    <div class="col-5_xs-12 gallery">
                                         <h1 class="title-unit"><span>CHALÉ <b>#<?php echo the_field('chele_code') ?></b></span><span class="units"><?php the_content(); ?></span></h1>
                                         <figure class="img-principal">
                                             <a class="fancybox" rel="gallery-<?php echo $i ?>" href="<?php echo the_field('chale_image_1') ?>">

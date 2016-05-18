@@ -17,9 +17,9 @@ $page_contato = 14;
     </div>
     <div class="wrapper">
         <div class="grid-center">
-            <div class="col-8 page-wrapper">
+            <div class="col-8_sm-10 page-wrapper">
                 <div class="grid">
-                    <div class="col">
+                    <div class="col-6_xs-12">
                         <h2 class="title">VILAREJO CHALÉ</h2>
                         <h3 class="subtitle">FAÇA SUA RESERVA</h3>
                         <ul class="contact-data">
@@ -31,7 +31,7 @@ $page_contato = 14;
                             <li class="mail"><a href="mailto:contato@vilarejomaresias.com.br">contato@vilarejomaresias.com.br</a></li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-6_xs-12 form-wrapper">
                         <h2 class="title">CONTATO</h2>
                         <h3 class="subtitle">FAÇA SUA RESERVA</h3>
                         <form>
@@ -67,13 +67,10 @@ $page_contato = 14;
         </div>
     </div>
     <div class="links-footer">
-        <div class="grid-center">
-            <div class="col-7 grid-spaceBetween">
-               <?php include 'links-footer.php'?>
-            </div>
-        </div>
+        <?php include 'links-footer.php'?>
     </div>
 </section>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <?php get_footer(); ?>
 </body>
 </html>

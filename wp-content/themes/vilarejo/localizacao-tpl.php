@@ -12,12 +12,12 @@ $page_contato = 14;
 <section id="main" class="clearfix location">
     <div class="wrapper">
         <div class="grid map-wrapper">
-            <div class="col">
+            <div class="col-6_xs-12">
                 <figure>
                     <img src="<?php echo the_field('page_image') ?>"/>
                 </figure>
             </div>
-            <div class="col">
+            <div class="col-6_xs-12">
                 <?php if (have_posts()) : while (have_posts()) : the_post();
                     $location = get_field('map_location');
                     ?>
@@ -40,7 +40,7 @@ $page_contato = 14;
                     </div>
                     <div class="page-text"><?php the_content(); ?></div>
                     <div class="grid-center page-extras">
-                        <div class="col-5">
+                        <div class="col-5_xs-12">
                             <div class="address">
                                 Rua Olimpio Romão César, 189<br>
                                 Maresias, CEP 11600-000, São Paulo - Brasil.
@@ -64,11 +64,7 @@ $page_contato = 14;
         </div>
     </div>
     <div class="links-footer">
-        <div class="grid-center">
-            <div class="col-7 grid-spaceBetween">
-               <?php include 'links-footer.php'?>
-            </div>
-        </div>
+        <?php include 'links-footer.php'?>
     </div>
 </section>
 <?php get_footer(); ?>
