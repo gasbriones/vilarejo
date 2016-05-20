@@ -238,6 +238,11 @@ figure {
       line-height: 2.5em;
       border: none;
       margin-left: 0.41667em; }
+    #footer form .captcha-img {
+      float: left; }
+    #footer form .code {
+      float: left;
+      width: 20% !important; }
   #footer .title {
     color: #E6E7E8;
     font-size: 0.875em;
@@ -482,7 +487,7 @@ figure {
     display: block; }
   .contato form label {
     font-weight: 500; }
-  .contato form input[type="text"] {
+  .contato form input[type="text"], .contato form input[type="email"], .contato form input[type="tel"] {
     margin-bottom: 1.25em;
     height: 1.4375em;
     line-height: 1.4375em;
@@ -501,6 +506,15 @@ figure {
     font-weight: 500;
     margin-top: 1.33333em;
     margin-right: -0.2em; }
+  .contato form .captcha-img {
+    float: left; }
+  .contato form .code {
+    float: left;
+    width: 20% !important; }
+  .contato form #msg {
+    color: #71BA4E;
+    font-weight: 500;
+    margin-top: 0.9375em; }
 
 .gallery {
   margin-bottom: 3.125em; }

@@ -347,6 +347,7 @@ figure {
       border: none;
       margin-bottom: (10em/16);
     }
+
     input[type="submit"]{
       background: #8CC76E;
       font-size: (12em/16);
@@ -354,6 +355,14 @@ figure {
       line-height: (40em/16);
       border: none;
       margin-left: (5em/12);
+    }
+
+    .captcha-img{
+      float: left;
+    }
+    .code{
+      float: left;
+      width: 20% !important;
     }
   }
   .title{
@@ -712,7 +721,7 @@ figure {
       font-weight: 500;
     }
 
-    input[type="text"]{
+    input[type="text"],input[type="email"],input[type="tel"]{
       margin-bottom:(20em/16);
       height: (23em/16);
       line-height: (23em/16);
@@ -734,6 +743,20 @@ figure {
       font-weight: 500;
       margin-top:(20em/15);
       margin-right: (-3em/15);
+    }
+
+    .captcha-img{
+      float: left;
+    }
+    .code{
+      float: left;
+      width: 20% !important;
+    }
+
+    #msg{
+      color: #71BA4E;
+      font-weight: 500;
+      margin-top: (15em/16);
     }
 
   }

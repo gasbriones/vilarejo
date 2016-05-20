@@ -2,6 +2,11 @@
 /*
 Template Name: Contato
 */
+
+session_start();
+include("ajax/simple-php-captcha.php");
+$_SESSION['captcha'] = simple_php_captcha();
+
 get_header();
 
 $page_contato = 14;
@@ -34,31 +39,47 @@ $page_contato = 14;
                     <div class="col-6_xs-12 form-wrapper">
                         <h2 class="title">CONTATO</h2>
                         <h3 class="subtitle">FAÇA SUA RESERVA</h3>
-                        <form>
+                        <form id="reserve" action="<?php echo get_template_directory_uri(); ?>/ajax/contacto.php">
                             <div class="grid-spaceBetween">
                                 <div class="col-5">
                                     <label>*Nome</label>
-                                    <input type="text" />
+                                    <input type="text" name="name" required tabindex="1" />
                                     <label>Telefone</label>
-                                    <input type="text" />
+                                    <input type="tel" name="phone" required tabindex="3"/>
                                     <label>Check-In</label>
-                                    <input type="text" />
+                                    <input type="text"  name="check-in" tabindex="5"/>
                                 </div>
                                 <div class="col-5">
                                     <label>*Sobrenome</label>
-                                    <input type="text" />
+                                    <input type="text" name="lastname" required tabindex="2" />
                                     <label>*E-mail</label>
-                                    <input type="text" />
+                                    <input type="email" name="email" required tabindex="4"/>
                                     <label>Check-Out</label>
-                                    <input type="text" />
+                                    <input type="text" name="check-out" tabindex="6"/>
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="col">
-                                    <label>Mensagem</label>
-                                    <textarea></textarea>
-                                    <input type="submit" value="ENVIAR" class="right" />
+                                    <div>
+                                        <label>Mensagem</label>
+                                        <textarea name="message" tabindex="7"></textarea>
+                                        </br> </br>
+                                    </div>
+                                    <div class="clearfix">
+                                        <label>Codigo</label>
+                                        <img class="captcha-img" src="<?php echo $_SESSION['captcha']['image_src']?>" width="100">
+                                        <input type="text" id="verify" class="code" name="captcha" value="" required/>
+                                        <input type="hidden" id="cap-code" name="code" value="<?php echo $_SESSION['captcha']['code']?>"/>
+                                    </div>
+                                    <div id="msg"></div>
+                                    <div>
+                                        <input type="submit" value="ENVIAR" class="right" />
+                                    </div>
+
                                 </div>
+                            </div>
+                            <div class="grid">
+
                             </div>
                         </form>
                     </div>
@@ -71,5 +92,38 @@ $page_contato = 14;
     </div>
 </section>
 <?php get_footer(); ?>
+<script type="text/javascript">
+
+
+(function ($) {
+
+    $('#reserve').submit(function (e) {
+        e.preventDefault();
+        var $self = $(this);
+
+        if($('#verify').val() == $('#cap-code').val()){
+            $.ajax({
+                url: $self.attr('action'),
+                data: $self.serialize(),
+                success: function () {
+                    $self.get(0).reset();
+
+                    $('#msg').html('Sua reserva no Vilarejo Chalé foi registrado com sucesso');
+                    setTimeout(function(){
+                        $('#msg').fadeOut().html('');
+                    },6000);
+                }
+            });
+        }else{
+            alert('Code is not correct, please try again');
+        }
+    });
+
+
+})(jQuery);
+
+
+
+</script>
 </body>
 </html>
