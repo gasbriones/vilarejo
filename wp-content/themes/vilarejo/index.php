@@ -89,7 +89,7 @@ $chale = new WP_Query($args);
                                 </figure>
                             </div>
                             <div class="col-6_xs-9">
-                                <h2 class="title">Comodidades do Chalés</h2>
+                                <h2 class="title">Comodidades dos Chalés</h2>
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/comodidades-chale.png">
                                 <div class="list">
                                     <?php echo the_field('comodidades') ?>

@@ -179,4 +179,58 @@
             opacity: 0
         }, 250);
     });
+
+
+    $('#reserve').submit(function (e) {
+        e.preventDefault();
+        var $self = $(this);
+
+        if($('#verify').val() == $('#cap-code').val()){
+            $.ajax({
+                url: $self.attr('action'),
+                data: $self.serialize(),
+                success: function () {
+                    $self.get(0).reset();
+
+                    $('#msg').html('Sua reserva no Vilarejo Chalé foi registrado com sucesso');
+                    setTimeout(function(){
+                        $('#msg').fadeOut().html('');
+                    },6000);
+                }
+            });
+        }else{
+            alert('Code is not correct, please try again');
+        }
+    });
+
+
+    $('#news').submit(function (e) {
+        e.preventDefault();
+
+        var $self = $(this);
+
+        $.ajax({
+            url: $self.attr('action'),
+            data: $self.serialize(),
+            success: function () {
+                $self.get(0).reset();
+
+                $('#newsmsg').html('Seu cadastro de email foi registrado com sucesso');
+
+                setTimeout(function(){
+                    $('#newsmsg').fadeOut().html('');
+                },6000);
+            }
+        });
+    });
+
+
+    $('.tooltip').click(function(){
+        var self = $(this);
+        $('.tooltip').find('span').hide();
+        self.find('span').toggle( "slide");
+    });
+
+
+
 })(jQuery);

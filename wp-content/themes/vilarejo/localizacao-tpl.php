@@ -43,12 +43,12 @@ $page_contato = 14;
                         <div class="col-5_xs-12">
                             <div class="address">
                                 Rua Olimpio Romão César, 189<br>
-                                Maresias, CEP 11600-000, São Paulo - Brasil.
+                                Maresias São Sebastião, CEP 11600-000, São Paulo - Brasil.
                             </div>
                             <div class="distances">
-                                <h2>Distancias a Vilarejo Chalé: </h2>
+                                <h2>Distâncias a Vilarejo Chalé: </h2>
                                 <ul>
-                                    <li>A 250m da Praia Maresias</li>
+                                    <li>A 250m da Praia de Maresias</li>
                                     <li>Aeroporto 153 km</li>
                                     <li>Rodoviária Tiete São Paulo 168 km</li>
                                     <li>Paúba 4,4 km</li>

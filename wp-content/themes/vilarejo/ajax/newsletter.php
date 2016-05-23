@@ -1,16 +1,10 @@
 <?
 $name = $_GET['name'];
-$lastname = $_GET['lastname'];
-$phone = $_GET['phone'];
 $email = $_GET['email'];
-$checkIn = $_GET['check-in'];
-$checkOut = $_GET['check-out'];
-$message = $_GET['message'];
-
 
 
 $destinatario = "contato@vilarejomaresias.com.br";
-$asunto = "Reservation from the web";
+$asunto = "Newsletter registration";
 $cuerpo = "
 <html>
     <head>
@@ -18,16 +12,11 @@ $cuerpo = "
     </head>
     <body>
     <img src='http://vilarejomaresias.com.br/wp-content/themes/vilarejo/images/logo.png'>
-    <h1>Reservation</h1>
+    <h1>Newsletter registration</h1>
     <p>
     <hr>
     <b>Name:</b> $name <br/><br/>
-    <b>Last Name:</b> $lastname <br/><br/>
-    <b>Phone:</b> $phone<br/><br/>
     <b>Email:</b> $email <br/><br/>
-    <b>Check-In:</b> $checkIn <br/><br/>
-    <b>Check-Out:</b> $checkOut <br/><br/>
-    <b>Message:</b> $message <br/><br/>
     </p>
     </body>
 </html>
@@ -49,19 +38,20 @@ mail($destinatario,$asunto,$cuerpo,$headers);
 $cuerpoResponse = "
 <html>
     <head>
-       <title>Vilarejo Chale - Cadastro</title>
+       <title>Vilarejo Chale - Cadastro Email</title>
     </head>
     <body>
     <img src='http://vilarejomaresias.com.br/wp-content/themes/vilarejo/images/logo.png'>
     <div>
 
-        <p><b>Confirmação de sua reserva:</b></p>
+       <p>Prezado(a) Cliente,</p>
 
-        <p>Prezado(a) Cliente,</p>
+        <p>Seu cadastro de email no Vilarejo Chalé foi
 
-        <p>Nós recebemos sua reserva no Vilarejo Chalé.</p>
+        registrado com sucesso, agradecemos pela preferência.</p>
 
-        <p>Entraremos em contato o mais breve possível.</p>
+        <p>Para mais informações por favor entre em contato.</p>
+
 
         <p>Atenciosamente,</p>
 
@@ -84,4 +74,4 @@ $headers2 = "MIME-Version: 1.0\r\n";
 $headers2 .= "Content-type: text/html; charset=UTF-8\r\n";
 
 $headers2.= "From: Vilarejo Chalé  <$destinatario>\r\n";
-mail($email,'Reserva Vilarejo Chalé',$cuerpoResponse,$headers2);
+mail($email,'Newsletter -  Vilarejo Chalé',$cuerpoResponse,$headers2);

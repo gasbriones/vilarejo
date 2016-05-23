@@ -29,13 +29,13 @@ $page_contato = 14;
                     <div class="page-text"><?php the_content(); ?></div>
                     <div class="page-extras">
                         <div class="grid">
-                            <div class="col">
+                            <div class="col-6_xs-12">
                                 <h2 class="extras-title">Atividades Esportivas</h2>
                                 <div class="extras-content">
                                     <?php echo the_field('sports_activity_maresias') ?>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-6_xs-12">
                                 <h2 class="extras-title">Os melhores Restaurantes</h2>
                                 <div class="extras-content">
                                     <?php echo the_field('best_restaurants_maresias') ?>

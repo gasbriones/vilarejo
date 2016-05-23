@@ -15,6 +15,7 @@
     <meta charset="<?php bloginfo('charset'); ?>"/>
     <meta name="viewport" content="width=device-width"/>
     <meta name="description" content="<?php bloginfo('description'); ?>"/>
+    <meta name="format-detection" content="telephone=no">
     <!-- Facebook -->
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="<?php bloginfo('name'); ?>"/>
