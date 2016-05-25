@@ -121,19 +121,40 @@ figure {
     top:(15em/16);
     right: (40em/16);
     z-index: 999;
+    display: table;
+
       li{
         float: left;
-        width:(28em/16);
         height: (27em/16);
-        background: url("../images/contact-icons.png") no-repeat;
+        line-height:(31em/16);
         margin-left: (15em/16);
+        position: relative;
+        padding-left: (30em/16);
+
+        span{
+          display: none;
+        }
+
+        &:before{
+          content: "";
+          position: absolute;
+          height: (27em/16);
+          width: (30em/16);
+          left: 0;
+          top:0;
+          background: url("../images/contact-icons.png") no-repeat;
+        }
 
         &.whatsapp{
-          background-position:(-45em/16) 0;
+          &:before{
+            background-position:(-45em/16) 0;
+          }
         }
 
         &.telephone{
-          background-position:(-86em/16) 0;
+          &:before{
+            background-position:(-86em/16) 0;
+          }
         }
       }
   }
@@ -784,10 +805,13 @@ figure {
     }
   }
   .thumbnail{
-    margin-top: (20em/16);
+    margin-top: (15em/16);
     padding: 0 5%;
     box-sizing: border-box;
     cursor: pointer;
+    figure{
+      border:solid 4px #ffffff;
+    }
   }
 }
 

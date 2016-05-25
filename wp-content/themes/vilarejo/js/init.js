@@ -167,20 +167,7 @@
         });
     });
 
-    //tooltip init
-    $('.tooltip').hover(function () {
-        $('#tooltip-containter').html($(this).data('text')).stop().animate({
-            marginLeft: '10px',
-            opacity: 1
-        }, 250);
-    }, function () {
-        $('#tooltip-containter').stop().animate({
-            marginLeft: '0',
-            opacity: 0
-        }, 250);
-    });
-
-
+    
     $('#reserve').submit(function (e) {
         e.preventDefault();
         var $self = $(this);
@@ -225,6 +212,11 @@
     });
 
 
+    $('.tooltip').click(function(){
+        var self = $(this);
+        $('.tooltip').find('span').hide();
+        self.find('span').toggle( "slide");
+    });
 
 
 

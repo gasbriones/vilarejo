@@ -29,7 +29,7 @@ $page_contato = 14;
                         <h3 class="subtitle">FAÇA SUA RESERVA</h3>
                         <ul class="contact-data">
                             <li class="gps">Rua Olimpio Romão César, 189<br>
-                                Maresias, CEP 11600-000<br>
+                                Maresias, São Sebastião CEP 11600-000<br>
                                 São Paulo - Brasil.</li>
                             <li class="mobile"> +55 12 99653-6063</li>
                             <li class="phone">+55 12 3865-6639</li>

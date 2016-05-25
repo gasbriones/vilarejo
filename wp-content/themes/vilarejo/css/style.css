@@ -75,16 +75,28 @@ figure {
     position: absolute;
     top: 0.9375em;
     right: 2.5em;
-    z-index: 999; }
+    z-index: 999;
+    display: table; }
     #header .header-contact li {
       float: left;
-      width: 1.75em;
       height: 1.6875em;
-      background: url("../images/contact-icons.png") no-repeat;
-      margin-left: 0.9375em; }
-      #header .header-contact li.whatsapp {
+      line-height: 1.9375em;
+      margin-left: 0.9375em;
+      position: relative;
+      padding-left: 1.875em; }
+      #header .header-contact li span {
+        display: none; }
+      #header .header-contact li:before {
+        content: "";
+        position: absolute;
+        height: 1.6875em;
+        width: 1.875em;
+        left: 0;
+        top: 0;
+        background: url("../images/contact-icons.png") no-repeat; }
+      #header .header-contact li.whatsapp:before {
         background-position: -2.8125em 0; }
-      #header .header-contact li.telephone {
+      #header .header-contact li.telephone:before {
         background-position: -5.375em 0; }
 
 .carousel {
@@ -533,10 +545,12 @@ figure {
       font-size: 0.86667em;
       margin-left: 5%; }
   .gallery .thumbnail {
-    margin-top: 1.25em;
+    margin-top: 0.9375em;
     padding: 0 5%;
     box-sizing: border-box;
     cursor: pointer; }
+    .gallery .thumbnail figure {
+      border: solid 4px #ffffff; }
 
 .tooltip {
   cursor: pointer; }
