@@ -92,38 +92,5 @@ $page_contato = 14;
     </div>
 </section>
 <?php get_footer(); ?>
-<script type="text/javascript">
-
-
-(function ($) {
-
-    $('#reserve').submit(function (e) {
-        e.preventDefault();
-        var $self = $(this);
-
-        if($('#verify').val() == $('#cap-code').val()){
-            $.ajax({
-                url: $self.attr('action'),
-                data: $self.serialize(),
-                success: function () {
-                    $self.get(0).reset();
-
-                    $('#msg').html('Sua reserva no Vilarejo Chalé foi registrado com sucesso');
-                    setTimeout(function(){
-                        $('#msg').fadeOut().html('');
-                    },6000);
-                }
-            });
-        }else{
-            alert('Code is not correct, please try again');
-        }
-    });
-
-
-})(jQuery);
-
-
-
-</script>
 </body>
 </html>

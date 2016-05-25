@@ -116,6 +116,9 @@ $chale = new WP_Query($args);
             </div>
         </div>
     </div>
+    <div class="links-footer">
+        <?php include 'links-footer.php'?>
+    </div>
 </section>
 <?php get_footer(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/fancybox/jquery.fancybox.pack.js"></script>

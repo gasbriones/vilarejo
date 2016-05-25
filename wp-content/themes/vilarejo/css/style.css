@@ -541,4 +541,9 @@ figure {
 .tooltip {
   cursor: pointer; }
 
+#newsmsg {
+  color: #71BA4E;
+  font-weight: 500;
+  margin-top: 0.9375em; }
+
 /*# sourceMappingURL=style.css.map */
