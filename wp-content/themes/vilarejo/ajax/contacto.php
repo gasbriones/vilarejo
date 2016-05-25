@@ -65,7 +65,7 @@ $cuerpoResponse = "
 
         <p>Atenciosamente,</p>
 
-        <p><b>Vilarejo Chalé</b> ]<br>
+        <p><b>Vilarejo Chalé</b><br>
         +55 12 99653­6063<br>
         +55 12 3895­6639<br>
         E­mail: contato@vilarejomaresias.com.br </p>

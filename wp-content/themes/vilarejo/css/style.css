@@ -129,13 +129,13 @@ figure {
 .item {
   text-align: center;
   margin-right: 5%; }
+  .item:hover {
+    opacity: 0.70 !important; }
   .item:last-child {
     margin-right: 0; }
   .item a {
     text-decoration: none;
     color: #676159; }
-    .item a:hover {
-      opacity: .70 !important; }
   .item .page-title {
     font-size: 0.8125em;
     font-weight: 400;
@@ -291,7 +291,7 @@ figure {
         left: 0;
         background: url("../images/phone-icon.png") no-repeat; }
       #footer .phones li.cel:before {
-        background-position: -3.125em 0; }
+        background-position: -3.0625em 0; }
       #footer .phones li.wtsp {
         padding-left: 0; }
         #footer .phones li.wtsp:before {
@@ -532,6 +532,9 @@ figure {
   margin-bottom: 3.125em; }
   .gallery:nth-child(n+1) {
     margin-right: 5%; }
+  .gallery .img-principal img {
+    cursor: -webkit-zoom-in !important;
+    cursor: -moz-zoom-in !important; }
   .gallery .title-unit {
     color: #676159;
     font-size: 0.9375em;

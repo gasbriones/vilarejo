@@ -204,6 +204,11 @@ figure {
   text-align: center;
   margin-right: 5%;
 
+  &:hover{
+    opacity: 0.70 !important;
+
+  }
+
   &:last-child{
     margin-right: 0;
   }
@@ -211,9 +216,6 @@ figure {
   a {
     text-decoration: none;
     color: #676159;
-    &:hover{
-      opacity: .70 !important;
-    }
   }
   .page-title {
     font-size: (13em/16);
@@ -435,7 +437,7 @@ figure {
 
       &.cel{
         &:before{
-         background-position: (-50em/16) 0;
+         background-position: (-49em/16) 0;
         }
       }
 
@@ -788,6 +790,16 @@ figure {
   &:nth-child(n+1){
     margin-right: 5%;
   }
+
+  .img-principal{
+    img{
+      cursor:-webkit-zoom-in !important;
+      cursor:-moz-zoom-in !important;
+    }
+
+  }
+
+
   .title-unit{
     color:#676159;
     font-size: (15em/16);

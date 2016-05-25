@@ -15,6 +15,7 @@
     <meta charset="<?php bloginfo('charset'); ?>"/>
     <meta name="viewport" content="width=device-width"/>
     <meta name="description" content="<?php bloginfo('description'); ?>"/>
+    <meta name="keywords" content="maresias, posada, pousada, pousadas maresias, posadas maresias, hotel, chale, surfista, medina, surf, onda, praia, praia maresias, praia badalada, litoral, são pablo, litoral sao paulo, praias são sebastião, surf, brasil ,surfe gabriel medina, gabriel medina">
     <meta name="format-detection" content="telephone=no">
     <!-- Facebook -->
     <meta property="og:type" content="website"/>

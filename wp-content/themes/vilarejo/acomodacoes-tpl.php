@@ -60,51 +60,49 @@ $chale = new WP_Query($args);
                                     <div class="col-5_xs-12 gallery">
                                         <h1 class="title-unit"><span>CHALÉ <b>#<?php echo the_field('chele_code') ?></b></span><span class="units"><?php the_content(); ?></span></h1>
                                         <figure class="img-principal">
-                                            <a class="fancybox" rel="gallery-<?php echo $i ?>" href="<?php echo the_field('chale_image_1') ?>">
-                                                <img src="<?php echo the_field('chale_image_1') ?>"/>
-                                            </a>
+                                            <img src="<?php echo the_field('chale_image_1') ?>"/>
                                         </figure>
 
                                         <div class="grid-spaceAround thumbnail ">
                                             <?php if( get_field('chale_image_1') ): ?>
                                                 <div class="col-2">
                                                     <figure>
-                                                        <img src="<?php echo the_field('chale_image_1') ?>"/>
+                                                        <img class="gallery-<?php echo $i ?>" src="<?php echo the_field('chale_image_1') ?>"/>
                                                     </figure>
                                                 </div>
                                             <?php endif; ?>
                                             <?php if( get_field('chale_image_2') ): ?>
                                                 <div class="col-2">
                                                     <figure>
-                                                        <img src="<?php echo the_field('chale_image_2') ?>"/>
+                                                        <img class="gallery-<?php echo $i ?>" src="<?php echo the_field('chale_image_2') ?>"/>
                                                     </figure>
                                                 </div>
                                             <?php endif; ?>
                                             <?php if( get_field('chale_image_3') ): ?>
                                                 <div class="col-2">
                                                     <figure>
-                                                        <img src="<?php echo the_field('chale_image_3') ?>"/>
+                                                        <img class="gallery-<?php echo $i ?>" src="<?php echo the_field('chale_image_3') ?>"/>
                                                     </figure>
                                                 </div>
                                             <?php endif; ?>
                                             <?php if( get_field('chale_image_4') ): ?>
                                                 <div class="col-2">
                                                     <figure>
-                                                        <img src="<?php echo the_field('chale_image_4') ?>"/>
+                                                        <img class="gallery-<?php echo $i ?>" src="<?php echo the_field('chale_image_4') ?>"/>
                                                     </figure>
                                                 </div>
                                             <?php endif; ?>
                                             <?php if( get_field('chale_image_5') ): ?>
                                                 <div class="col-2">
                                                     <figure>
-                                                        <img src="<?php echo the_field('chale_image_5') ?>"/>
+                                                        <img class="gallery-<?php echo $i ?>" src="<?php echo the_field('chale_image_5') ?>"/>
                                                     </figure>
                                                 </div>
                                             <?php endif; ?>
                                             <?php if( get_field('chale_image_6') ): ?>
                                                 <div class="col-2">
                                                     <figure>
-                                                        <img src="<?php echo the_field('chale_image_6') ?>"/>
+                                                        <img class="gallery-<?php echo $i ?>" src="<?php echo the_field('chale_image_6') ?>"/>
                                                     </figure>
                                                 </div>
                                             <?php endif; ?>
@@ -126,17 +124,37 @@ $chale = new WP_Query($args);
     (function($){
         $(document).ready(function(){
             $('.gallery').each(function () {
-                var self = $(this);
-                var container = $(this).find('.img-principal img');
+                var self = $(this),
+                    imgArray =[],
+                    container = $(this).find('.img-principal img');
+
+                self.find('.thumbnail').find('img').each(function () {
+                    imgArray.push($(this).attr('src'))
+                });
+
                 $(this).find('.thumbnail figure img').click(function(){
                     var src = $(this).attr('src');
                     container.parent().attr('href',src);
-                    container.attr('src',src);
+                    container.attr('src',src)
+                });
 
-                    self.find(".fancybox").fancybox({
-                        prevEffect	: 'none',
-                        nextEffect	: 'none'
-                    });
+                container.click(function(e){
+                    e.preventDefault();
+                    var orderArray = [];
+                    var position = [];
+                    var initialPic = $(this).attr('src');
+
+                    for(var i=0; i < imgArray.length; i++){
+                        if(imgArray[i] == initialPic){
+                            orderArray.unshift(imgArray[i])
+                            position.unshift(i);
+                        }else{
+                            orderArray.push(imgArray[i])
+                            position.push(i);
+                        }
+                    }
+                    console.log(position);
+                    $.fancybox(orderArray);
                 });
             });
 

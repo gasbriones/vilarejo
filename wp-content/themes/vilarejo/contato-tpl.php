@@ -30,7 +30,10 @@ $page_contato = 14;
                         <ul class="contact-data">
                             <li class="gps">Rua Olimpio Romão César, 189<br>
                                 Maresias, São Sebastião CEP 11600-000<br>
-                                São Paulo - Brasil.</li>
+                                São Paulo - Brasil.<br><br>
+                                <b>Lat:</b> -23.787911,  <b>Lng:</b> -45.565767<br>
+                                <b>Google Map:</b> 23°47'16.5"S 45°33'56.8"W
+                            </li>
                             <li class="mobile"> +55 12 99653-6063</li>
                             <li class="phone">+55 12 3865-6639</li>
                             <li class="mail"><a href="mailto:contato@vilarejomaresias.com.br">contato@vilarejomaresias.com.br</a></li>
